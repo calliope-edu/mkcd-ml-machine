@@ -1,5 +1,5 @@
 {
-    "name": "mkcd-ml-machine - Copy",
+    "name": "mkcd-ml-machine",
     "description": "",
     "dependencies": {
         "core": "*",
