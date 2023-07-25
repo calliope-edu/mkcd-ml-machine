@@ -73,8 +73,6 @@ namespace MLMachine {
             const input = bluetooth.uartReadUntil(DELIM_SYMBOL)
             if (input == gesture) {
                 body()
-            } else {
-                basic.showString(input)
             }
         });
     }
