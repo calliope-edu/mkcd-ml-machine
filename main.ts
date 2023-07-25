@@ -18,6 +18,9 @@ namespace MLMachine {
         bluetooth.startButtonService();
         bluetooth.startIOPinService();
         bluetooth.startLEDService();
+        bluetooth.onBluetoothConnected(() => {
+            basic.showNumber(2);
+        })
     }
 
     //% block
