@@ -9,4 +9,11 @@ namespace MLMachine {
         bluetooth.startIOPinService();
         bluetooth.startLEDService();
     }
+
+    //% block
+    export function onGestureRecognized(gesture: string = "shake"): void {
+        bluetooth.onUartDataReceived("#", function () {
+            basic.showString(bluetooth.uartReadUntil("#"))
+        });
+    }
 }
