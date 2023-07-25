@@ -13,11 +13,11 @@ namespace MLMachine {
     }
 
     //% block
-    export function onGestureRecognized(gesture: string = "shake"): void {
+    export function onGestureRecognized(gesture: string = "shake", body: () => {}): void {
         bluetooth.onUartDataReceived(DELIM_SYMBOL, function () {
             const input = bluetooth.uartReadUntil(DELIM_SYMBOL);
             if (input == gesture) {
-                basic.showNumber(9)
+                body()
             }
         });
     }
