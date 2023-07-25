@@ -1,5 +1,7 @@
 //% color=190 weight=100 icon="\uf121" block="MLMachine"
 namespace MLMachine {
+    const DELIM_SYMBOL = "#"
+
     //% block
     export function setup(): void {
         bluetooth.setTransmitPower(7);
@@ -12,8 +14,11 @@ namespace MLMachine {
 
     //% block
     export function onGestureRecognized(gesture: string = "shake"): void {
-        bluetooth.onUartDataReceived("#", function () {
-            basic.showString(bluetooth.uartReadUntil("#"))
+        bluetooth.onUartDataReceived(DELIM_SYMBOL, function () {
+            const input = bluetooth.uartReadUntil(DELIM_SYMBOL);
+            if (input == gesture) {
+                basic.showNumber(9)
+            }
         });
     }
 }
