@@ -1,1 +1,1 @@
-MLMachine.test()
+MLMachine.setup();
