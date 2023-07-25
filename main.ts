@@ -1,4 +1,4 @@
-//% color=190 weight=100 icon="\uf83e" block="MLMachine"
+//% color=190 weight=100 icon="\uf121" block="MLMachine"
 namespace MLMachine {
     //% block
     export function setup(): void {
