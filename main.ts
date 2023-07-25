@@ -9,9 +9,4 @@ namespace MLMachine {
         bluetooth.startIOPinService();
         bluetooth.startLEDService();
     }
-/*    export function test(): void { 
-        bluetooth.onUartDataReceived("%", function () {
-            basic.showString("hello");
-        })
-    }*/
 }
