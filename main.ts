@@ -12,8 +12,8 @@ namespace MLMachine {
 
     //% block
     export function onGestureRecognized(gestureName: string, body: () => void) {
-        bluetooth.onUartDataReceived(Delimiters.Hash, function () {
-            body
+        bluetooth.onUartDataReceived("#", function () {
+            body()
         })
     }
 }
