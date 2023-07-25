@@ -13,7 +13,7 @@ namespace MLMachine {
     }
 
     //% block
-    export function onGestureRecognized(gesture: string = "shake", body: () => {}): void {
+    export function onGestureRecognized(gesture: string = "shake", body: () => void): void {
         bluetooth.onUartDataReceived(DELIM_SYMBOL, function () {
             const input = bluetooth.uartReadUntil(DELIM_SYMBOL);
             if (input == gesture) {
