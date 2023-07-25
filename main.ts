@@ -3,6 +3,12 @@ namespace MLMachine {
     const DELIM_SYMBOL = "#"
     let is_setup = false
 
+    class gestureRecognitions {
+        addRecognitionCallback() {
+
+        }
+    }
+
     const CODEBOOK: string[][] = [
         ['t', 'a', 't', 'a', 't'],
         ['p', 'e', 'p', 'e', 'p'],
@@ -18,9 +24,6 @@ namespace MLMachine {
         bluetooth.startButtonService();
         bluetooth.startIOPinService();
         bluetooth.startLEDService();
-        bluetooth.onBluetoothConnected(() => {
-            basic.showNumber(2);
-        })
     }
 
     //% block
