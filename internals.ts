@@ -35,9 +35,19 @@ namespace MLMachine {
         const uartInput = bluetooth.uartReadUntil(DELIM_SYMBOL)
         const prefix = uartInput.substr(0, 2);
         const input = uartInput.substr(2);
-        if (prefix == "g_") {
+        if (prefix === "g_") {
             // Gesture recognition
             gestureRecognitions.fireCallbackFor(input); // Could be something different from gesture names
+        }
+        if (prefix === "s_") {
+            // System messages
+            handleSystemInputs(input);
+        }
+    }
+
+    function handleSystemInputs(input: string): void {
+        if (input === "connected") {
+            bluetooth.uartWriteLine("hello world");
         }
     }
 }
