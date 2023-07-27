@@ -8,14 +8,11 @@ namespace MLMachine {
         ['z', 'u', 'z', 'u', 'z'],
     ];
 
-    //% block
-    export function showPairingPattern(): void {
-        const name = control.deviceName()
-        const pattern = nameToPattern(name);
+    export function setLEDPattern(pattern: boolean[]) {
         for (let x = 0; x < 5; x++) {
             for (let y = 0; y < 5; y++) {
-                const inx = x + 5 * y
-                const state = pattern[inx]
+                const pattern_index = x + 5 * y
+                const state = pattern[pattern_index]
                 if (state) {
                     led.plot(x, y)
                 } else {
@@ -25,7 +22,7 @@ namespace MLMachine {
         }
     }
 
-    function nameToPattern(name: string): boolean[] {
+    export function nameToPattern(name: string): boolean[] {
         const pattern: boolean[] = [
             true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true
         ]
