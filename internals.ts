@@ -48,6 +48,7 @@ namespace MLMachine {
     function handleSystemInputs(input: string): void {
         if (input === "connected") {
             bluetooth.uartWriteLine("hello world");
+            basic.showString("Connec")
         }
     }
 }
