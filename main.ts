@@ -2,7 +2,7 @@
 namespace MLMachine {
     export let gestureRecognitions: GestureRecognitions = null
 
-    enum Role {
+    export enum Role {
         INPUT, OUTPUT
     }
 
