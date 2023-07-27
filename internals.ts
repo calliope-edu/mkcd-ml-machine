@@ -18,9 +18,26 @@ namespace MLMachine {
         gestureRecognitions = new GestureRecognitions();
 
         // Map to an action, it may not be gestures recognized
-        bluetooth.onUartDataReceived(DELIM_SYMBOL, function () {
-            const gestureName = bluetooth.uartReadUntil(DELIM_SYMBOL)
-            gestureRecognitions.fireCallbackFor(gestureName); // Could be something different from gesture names
-        });
+        bluetooth.onUartDataReceived(DELIM_SYMBOL, handleUartInput);
+        bluetooth.onBluetoothConnected(handleBluetoothConnect)
+        bluetooth.onBluetoothDisconnected(handleBluetoothDisconnect)
+    }
+
+    function handleBluetoothConnect(): void {
+        bluetooth.uartWriteLine("hello world connect")
+    }
+
+    function handleBluetoothDisconnect(): void {
+        showPairingPattern();
+    }
+
+    function handleUartInput(): void {
+        const uartInput = bluetooth.uartReadUntil(DELIM_SYMBOL)
+        const prefix = uartInput.substr(0, 2);
+        const input = uartInput.substr(2);
+        if (prefix == "g_") {
+            // Gesture recognition
+            gestureRecognitions.fireCallbackFor(input); // Could be something different from gesture names
+        }
     }
 }

@@ -18,19 +18,4 @@ namespace MLMachine {
         requireSetup();
         gestureRecognitions.addRecognitionCallback(gesture, body)
     }
-
-    //% block
-    export function onConnected(role: Role, body: () => void) {
-        
-    }
-
-    //% block
-    export function onDisconnected(role: Role, body: () => void) {
-
-    }
-
-    //% block
-    export function onReconnect(role: Role, body: () => void) {
-
-    }
 }
