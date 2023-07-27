@@ -22,7 +22,7 @@ namespace MLMachine {
         }
 
         public fireCallbackFor(gestureName: string) {
-            const callbackIndex = gestureName.indexOf(gestureName)
+            const callbackIndex = this.gestureNames.indexOf(gestureName)
             if (callbackIndex == -1) {
                 return
             }
