@@ -24,6 +24,7 @@ namespace MLMachine {
     }
 
     function handleBluetoothConnect(): void {
+        pause(2000)
         bluetooth.uartWriteLine("hello world connect")
     }
 
