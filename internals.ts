@@ -25,7 +25,7 @@ namespace MLMachine {
 
     function handleBluetoothConnect(): void {
         pause(2000)
-        bluetooth.uartWriteString("id_mkcd")
+        bluetooth.uartWriteString("id_mkcd") // Identify as makecode hex
     }
 
     function handleBluetoothDisconnect(): void {
