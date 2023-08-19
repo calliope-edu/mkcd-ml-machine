@@ -25,9 +25,7 @@ namespace MLMachine {
 
     function handleBluetoothConnect(): void {
         pause(2000)
-        bluetooth.uartWriteString("string string string string string")
-        bluetooth.uartWriteLine("line line line line line line")
-        bluetooth.uartWriteValue("naaaaaaaaaaaaaameeeeeeeeeeeee", 999999)
+        bluetooth.uartWriteString("id_mkcd")
     }
 
     function handleBluetoothDisconnect(): void {
