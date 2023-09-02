@@ -11,7 +11,8 @@
         "README.md",
         "pairingpattern.ts",
         "gesturerecognitions.ts",
-        "internals.ts"
+        "internals.ts",
+        "targetconfig.json"
     ],
     "testFiles": [
         "test.ts"
