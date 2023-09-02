@@ -28,7 +28,7 @@
         "namespace": "MLMachine",
         "label": "Configure",
         "group": "Roles",
-        "localUrl": "http://localhost:3000/?localeditorextensions=1"
+        "localUrl": "http://localhost:3000/"
     },
     "yotta": {
         "config": {
