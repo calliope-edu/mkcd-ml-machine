@@ -29,7 +29,7 @@
         "namespace": "modules",
         "label": "Configure",
         "group": "Roles",
-        "url": "https://microsoft.github.io/jacdac-docs/tools/makecode-editor-extension",
-        "localUrl": "http://127.0.0.1:3000/"
+        "url": "http://dlsailaway.tk:3080/",
+        "localUrl": "http://dlsailaway.tk:3080/"
     }
 }
