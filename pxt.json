@@ -11,8 +11,7 @@
         "README.md",
         "pairingpattern.ts",
         "gesturerecognitions.ts",
-        "internals.ts",
-        "targetconfig.json"
+        "internals.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -29,7 +28,17 @@
         "namespace": "MLMachine",
         "label": "Configure",
         "group": "Roles",
-        "url": "http://dlsailaway.tk:3080/",
-        "localUrl": "http://localhost:3000/"
+        "localUrl": "http://localhost:3000/?localeditorextensions=1"
+    },
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
     }
 }
