@@ -27,6 +27,6 @@
     "preferredEditor": "tsprj",
     "extension": {
         "url": "https://ml-machine.org/",
-        "localUrl": "http://localhost:5173/?localeditorextensions=1"
+        "localUrl": "http://127.0.0.1:3000/index.html"
     }
 }
