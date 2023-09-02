@@ -26,10 +26,10 @@
     ],
     "preferredEditor": "tsprj",
     "extension": {
-        "namespace": "modules",
+        "namespace": "MLMachine",
         "label": "Configure",
         "group": "Roles",
         "url": "http://dlsailaway.tk:3080/",
-        "localUrl": "http://dlsailaway.tk:3080/"
+        "localUrl": "http://localhost:3000/"
     }
 }
