@@ -11,8 +11,7 @@
         "README.md",
         "pairingpattern.ts",
         "gesturerecognitions.ts",
-        "internals.ts",
-        "tools/editor.html.ts"
+        "internals.ts"
     ],
     "testFiles": [
         "test.ts"
