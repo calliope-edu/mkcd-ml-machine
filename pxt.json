@@ -23,5 +23,9 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "tsprj",
+    "extension": {
+        "url": "hello world",
+        "localUrl": "http://localhost:5173/"
+    }
 }
