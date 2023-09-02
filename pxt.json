@@ -30,6 +30,6 @@
         "label": "Configure",
         "group": "Roles",
         "url": "https://microsoft.github.io/jacdac-docs/tools/makecode-editor-extension",
-        "localUrl": "http://localhost:3000/"
+        "localUrl": "http://127.0.0.1:3000/"
     }
 }

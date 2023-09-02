@@ -1,5 +1,5 @@
 {
     "packages": {
-        "approvedEditorExtensions": ["https://ml-machine.org/", "http://localhost:3000/"]
+        "approvedEditorExtensions": ["https://ml-machine.org/", "http://127.0.0.1:3000/"]
     }
 }
