@@ -3,6 +3,7 @@ namespace MLMachine {
 
     const DELIM_SYMBOL = "#"
     let is_setup = false
+    const BUILD_NUMBER = 1; // Updated manually for each change added.
 
     export function requireSetup(): void {
         if (is_setup) {
@@ -26,6 +27,7 @@ namespace MLMachine {
     function handleBluetoothConnect(): void {
         pause(2000)
         bluetooth.uartWriteString("id_mkcd") // Identify as makecode hex
+        bluetooth.uartWriteString("vi_" + BUILD_NUMBER) // Identify as makecode hex
     }
 
     function handleBluetoothDisconnect(): void {
