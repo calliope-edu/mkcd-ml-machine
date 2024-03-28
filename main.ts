@@ -1,3 +1,9 @@
+/**
+ * (c) 2024, A. Malthe Henriksen
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
 //% color=190 weight=100 icon="\uf121" block="MLMachine"
 namespace MLMachine {
     export let gestureRecognitions: GestureRecognitions = null

@@ -1,3 +1,9 @@
+/**
+ * (c) 2024, A. Malthe Henriksen
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
 namespace MLMachine {
     // Hijacks bluetooth capabilities and ensures all required services are started.
 
