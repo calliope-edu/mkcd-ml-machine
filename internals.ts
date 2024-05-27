@@ -32,8 +32,8 @@ namespace MLMachine {
 
     function handleBluetoothConnect(): void {
         pause(2000)
-        for (let i = 0 ; i < 20 ; i++) {
-            pause(500)
+        for (let i = 0 ; i < 10 ; i++) {
+            pause(800)
             bluetooth.uartWriteString("id_mkcd") // Identify as makecode hex
             bluetooth.uartWriteString("vi_" + BUILD_NUMBER)
         }
